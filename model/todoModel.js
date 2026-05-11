@@ -17,7 +17,7 @@ const TodoSchema = new mongoose.Schema({
         type: Boolean,
         default: false
     }
-}, {timeStamp: true})
+}, { timestamps: true })
 
 const todoModel = mongoose.model("Todo", TodoSchema)
 
