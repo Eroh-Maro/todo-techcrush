@@ -17,7 +17,7 @@ const getAllTodos = async (req, res) => {
 const getOneTodos = async (req, res) => {
     try {
         const { id } =  req.params;
-        const todo = await todoModel.find(id);
+        const todo = await todoModel.findById(id);
         return res.status(200).json({
             message: "Todo found",
             data: todo
